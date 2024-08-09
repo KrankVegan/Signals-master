@@ -26,7 +26,7 @@ const ROUTES:Route[] = [
             {
                 path: 'signal-ejemplo3',
                 loadComponent: () => 
-                    import('./signal-ejemplo2/signal-ejemplo3.component')
+                    import('./signal-ejemplo3/signal-ejemplo3.component')
             },
         ]
     }
