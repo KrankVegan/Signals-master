@@ -1,0 +1,21 @@
+<h2>Ejemplo 5 -  Todo List con señales escribibles</h2>
+
+
+<mat-form-field>
+    <mat-label> Nombre de la tarea</mat-label>
+    <input matInput name="todo" #todo />
+</mat-form-field>
+
+
+<button mat-raised-button color="primary" (click)="addTodo(todo)"> 
+    Agregar Tarea 
+
+</button>
+
+<ul>
+    @for(item of todos(); track item){
+        <li>
+            {{item}}
+        </li>
+    }
+</ul>
