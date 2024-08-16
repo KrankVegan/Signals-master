@@ -17,7 +17,7 @@ export default class SignalEjemplo6Component {
   counterConValorInicial = toSignal(this.counter2$, {initialValue: 12}) */
   initialValue = 12;
   counter2$ = interval(1000).pipe(
-    take(10),
+    take(11), // counts 10 times
     map(val => val + this.initialValue)
   );
   counterConValorInicial = toSignal(this.counter2$, { initialValue: this.initialValue });
