@@ -1,6 +1,7 @@
-<h2>Ejemplo 2 - Contador Auto Incrementado</h2>
-
-<span>
-     contador = {{ contador() }}
-</span>
-
+<div class="signal-ejemplo2-container">
+  <h2>Ejemplo 2: Auto Increment Count with Signals</h2>
+  <p>Current Count: {{ count() }}</p>
+  <button (click)="startAutoIncrement()" [disabled]="isRunning()">Start</button>
+  <button (click)="stopAutoIncrement()" [disabled]="!isRunning()">Stop</button>
+  <button (click)="resetCount()">Reset</button>
+</div>
